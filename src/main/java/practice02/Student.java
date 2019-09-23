@@ -1,22 +1,11 @@
 package practice02;
 
-public class Student {
-    private String name;
-    private int age;
+public class Student extends Person{
     private int classNumber;
 
     Student(String name, int age, int classNumber){
-        this.name = name;
-        this.age = age;
+        super(name, age);
         this.classNumber = classNumber;
-    }
-
-    String getName(){
-        return name;
-    }
-
-    int getAge(){
-        return age;
     }
 
     int getKlass(){
@@ -24,7 +13,7 @@ public class Student {
     }
 
     String introduce(){
-        return "I am a Student. I am at Class " + getKlass() + ".";
+        return "I am a Student. I am at Class " + classNumber + ".";
     }
 
 }

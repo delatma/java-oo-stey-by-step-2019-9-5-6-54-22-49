@@ -1,19 +1,23 @@
 package practice02;
 
 public class Student extends Person{
-    private int classNumber;
+    //        Then create class Student to inherit class Person. There are fields name,
+    //        age, klass and a method named introduce in class Student.
+    private int klass;
 
-    Student(String name, int age, int classNumber){
+    Student(String name, int age, int klass){
         super(name, age);
-        this.classNumber = classNumber;
+        this.klass = klass;
     }
 
     int getKlass(){
-        return classNumber;
+        return klass;
     }
 
+    //        Method introduce should return string like this:
+    //        >I am a Student. I am at Class 2.
     String introduce(){
-        return "I am a Student. I am at Class " + classNumber + ".";
+        return "I am a Student. I am at Class " + klass + ".";
     }
 
 }

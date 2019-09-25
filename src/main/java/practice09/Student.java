@@ -1,4 +1,5 @@
 package practice09;
+
 public class Student extends Person{
     //    Then create class Student to inherit class Person. There are fields id, name, age, klass
     //    But field klass is an object rather than a number.

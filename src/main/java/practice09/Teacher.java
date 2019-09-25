@@ -1,6 +1,5 @@
 package practice09;
 
-
 public class Teacher extends Person{
     //Then create class Teacher to inherit class Person. There are fields id, name, age, klass and
 
